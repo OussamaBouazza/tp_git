@@ -1,8 +1,14 @@
-public class Soustraction implements Calcule{
+public class Soustraction implements Calcul{
 
     @Override
     public int calculer(int a, int b){
-        int resultat= a-b;
-        return resultat;
+         return a-b ;
+    }
+
+    public static void main(String[] args) {
+        Soustraction s =new Soustraction();
+        System.out.println(s.calculer(4,5));
+        System.out.println(s.calculer(6,5));
+
     }
 }
